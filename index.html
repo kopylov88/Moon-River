@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon River</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logos">
+                    <a href="#" class="logo"><img src="img/icons/logo.svg" alt="logo"></a>
+                    <a href="#" class="logo-white"><img src="img/logo-white.svg" alt="logo"></a>
+                </div>
+                <div class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#"><img src="img/icons/favorites.svg" alt="favorites"></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link"><img src="img/icons/user.svg" alt="user"></a>
+                        </li>
+                        <li class="menu__item">
+                            <div class="basket">
+                                <a href="#" class="basket__icon"><img src="img/icons/basket.svg" alt="basket"></a>
+                                <span class="basket__number">1</span>
+                            </div>
+                        </li>
+                        <li class="menu__item burger">
+                            <div class="menu__button" >
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="jewerly">
+            <div class="jewerly-bg">
+                <div class="jewerly-bg-left"></div>
+                <div class="jewerly-bg-right"></div>
+            </div>
+            <div class="container">
+                <div class="jewerly-content">
+                    <div class="jewerly-content__inner">
+                        <div class="jewerly-content__left">
+                            <div class="jewerly-content__title">
+                                <h1>HIGH JEWELRY</h1>
+                                <a href="#" class="jewerly-content__link">Смотреть коллекцию</a>   
+                            </div>
+                            <div class="jewerly-content__lang">
+                                <a class="ru active" href="#">ru</a>
+                                <a class="en" href="#">en</a>
+                            </div>
+                        </div>
+                        <div class="jewerly-content__right">
+                            <div class="ring">
+                                <img src="img/ring.png" alt="ring">
+                            </div>
+                            <div class="ring-descr">
+                                <p class="ring-descr__name">КОЛЬЦО TRINITY, Cartier</p>
+                                <p class="ring-descr__material">Белое золото, бриллианты</p>
+                                <p class="ring-descr__price">498 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-top">
+                    <div class="menu-popup-wpap">
+                        <div class="container">
+                            <ul class="popup__menu menu-popup">
+                                <li class="menu-popup__item ">
+                                    <button class="menu-popup__btn active" data-tab = "#tab-1">Ювелирные изделия</button>            
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-2">Часы</button>          
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-3">Ароматы</button>      
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-4">Бренды</button>   
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-5">Изделия из кожи</button>   
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-6">Свадебные украшения</button>   
+                                </li>
+                                <li class="menu-popup__item">
+                                    <button class="menu-popup__btn" data-tab = "#tab-7">Другое</button>   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="tab active" id="tab-1">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                    <li><a class="tab__link" href="#">Для детей</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Категории</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Кольца</a></li>
+                                    <li><a class="tab__link" href="#">Браслеты</a></li>
+                                    <li><a class="tab__link" href="#">Колье</a></li>
+                                    <li><a class="tab__link" href="#">Серьги</a></li>
+                                    <li><a class="tab__link" href="#">Броши</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Материал</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Белое золото</a></li>
+                                    <li><a class="tab__link" href="#">Изделия с брильянтами</a></li>
+                                    <li><a class="tab__link" href="#">Розовое золото</a></li>
+                                    <li><a class="tab__link" href="#">Жёлтое золото</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Mercury</a></li>
+                                    <li><a class="tab__link" href="#">Chopard</a></li>
+                                    <li><a class="tab__link" href="#">Cartier</a></li>
+                                    <li><a class="tab__link" href="#">Graff</a></li>
+                                    <li><a class="tab__link" href="#">Garrard</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-2">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                    <li><a class="tab__link" href="#">Для детей</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Материал</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Золото</a></li>
+                                    <li><a class="tab__link" href="#">С брильянтами</a></li>
+                                    <li><a class="tab__link" href="#">Серебро</a></li>
+                                    <li><a class="tab__link" href="#">Сталь</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Vacheron Constantin</a></li>
+                                    <li><a class="tab__link" href="#">Breguet</a></li>
+                                    <li><a class="tab__link" href="#">Longines</a></li>
+                                    <li><a class="tab__link" href="#">Patek Philippe</a></li>
+                                    <li><a class="tab__link" href="#">Тissot</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-3">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#"></a></li>
+                                    <li><a class="tab__link" href="#">Chanel</a></li>
+                                    <li><a class="tab__link" href="#">Lanvin</a></li>
+                                    <li><a class="tab__link" href="#">Gucci</a></li>
+                                    <li><a class="tab__link" href="#">Givenchy</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-4">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                    <li><a class="tab__link" href="#">Для детей</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Mercury</a></li>
+                                    <li><a class="tab__link" href="#">Chopard</a></li>
+                                    <li><a class="tab__link" href="#">Cartier</a></li>
+                                    <li><a class="tab__link" href="#">Graff</a></li>
+                                    <li><a class="tab__link" href="#">Garrard</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-5">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                    <li><a class="tab__link" href="#">Для детей</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Категории</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Ремни</a></li>
+                                    <li><a class="tab__link" href="#">Браслеты</a></li>
+                                    <li><a class="tab__link" href="#">Сумки</a></li>
+                                    <li><a class="tab__link" href="#">Портмоне</a></li>
+                                    <li><a class="tab__link" href="#">Перчатки</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Mercury</a></li>
+                                    <li><a class="tab__link" href="#">Chopard</a></li>
+                                    <li><a class="tab__link" href="#">Cartier</a></li>
+                                    <li><a class="tab__link" href="#">Graff</a></li>
+                                    <li><a class="tab__link" href="#">Garrard</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-6">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">Категории</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Кольца</a></li>
+                                    <li><a class="tab__link" href="#">Браслеты</a></li>
+                                    <li><a class="tab__link" href="#">Колье</a></li>
+                                    <li><a class="tab__link" href="#">Серьги</a></li>
+                                    <li><a class="tab__link" href="#">Броши</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">материал</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Белое золото</a></li>
+                                    <li><a class="tab__link" href="#">Изделия с брильянтами</a></li>
+                                    <li><a class="tab__link" href="#">Розовое золото</a></li>
+                                    <li><a class="tab__link" href="#">Жёлтое золото</a></li>
+                                    <li><a class="tab__link" href="#">Мзделия с изумрудами</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Mercury</a></li>
+                                    <li><a class="tab__link" href="#">Chopard</a></li>
+                                    <li><a class="tab__link" href="#">Cartier</a></li>
+                                    <li><a class="tab__link" href="#">Graff</a></li>
+                                    <li><a class="tab__link" href="#">Garrard</a></li>
+                                    <li><a class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab" id="tab-7">
+                            <div class="tab__item">
+                                <h3 class="tab__title">Для кого</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Для женщин</a></li>
+                                    <li><a class="tab__link" href="#">Для мужчин</a></li>
+                                    <li><a class="tab__link" href="#">Для детей</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">категории</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">кольца</a></li>
+                                    <li><a class="tab__link" href="#">браслеты</a></li>
+                                    <li><a class="tab__link" href="#">колье</a></li>
+                                    <li><a class="tab__link" href="#">серьги</a></li>
+                                    <li><a class="tab__link" href="#">броши</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">материал</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Белое золото</a></li>
+                                    <li><a class="tab__link" href="#">Изделия с брильянтами</a></li>
+                                    <li><a class="tab__link" href="#">Розовое золото</a></li>
+                                    <li><a class="tab__link" href="#">Жёлтое золото</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab__item">
+                                <h3 class="tab__title">бренд</h3>
+                                <ul class="tab__list">
+                                    <li><a class="tab__link" href="#">Mercury</a></li>
+                                    <li><a class="tab__link" href="#">Chopard</a></li>
+                                    <li><a class="tab__link" href="#">Cartier</a></li>
+                                    <li><a class="tab__link" href="#">Graff</a></li>
+                                    <li><a class="tab__link" href="#">Garrard</a></li>
+                                    <li><a  class="all" href="#">Показать все бренды</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-line">
+                    <div class="container">
+                        <div class="popup-line__item"></div>
+                    </div>
+                </div>
+                <div class="popup-bottom">
+                    <div class="container">
+                        <div class="popup-bottom__inner">
+                            <div class="popup-bottom__img">
+                                <h3 class="popup-bottom__title">Новая коллекция by Mercury</h3>
+                                <p class="popup-bottom__text">JUSTE UN CLOU</p>
+                                <div class="popup-bottom__see see">
+                                    <a href="#" class="see__link">
+                                        <div class="see__item">Cмотреть коллекцию</div>
+                                        <div class="see__item see-btn"><img src="img/icons/Line.svg" alt=""></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="popup-bottom__connect">
+                                <div class="footer-botton__tel footer-tel">
+                                    <div class="footer-tel__title">
+                                        <h3>телефон горячей линии</h3>
+                                     </div>
+                                    <a href="tel:+7 800 456 456" class="footer-tel__number">+7 800 456 456</a>
+                                    <div class="footer-bottom__links">
+                                        <a href="#"><img src="img/icons/Facebook.png" alt="facebook"></a>
+                                        <a href="#"><img src="img/icons/Instagram.png" alt="inst"></a>
+                                    </div>
+                                </div>
+                                <div class="footer-bottom__news footer-news">
+                                    <div class="footer-news__title">
+                                        <h3>подпишитесь на новости</h3>
+                                    </div>
+                                    <form class="footer-news__email" action="">
+                                        <input type="email" placeholder="Введите E-mail">
+                                        <button class="footer-news__btn" type="submit"></button>
+                                    </form>
+                                    <div class="footer-news__line"></div>
+                                    <div class="footer-bottom__downloads">
+                                        <a class="footer-bottom__link" href="#"><img src="img/apstore.png" alt="facebook"></a>
+                                        <a class="footer-bottom__link" href="#"><img src="img/gplay.png" alt="inst"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="for">
+            <a href="" class="for-man">
+                <img src="img/for-man.jpg" alt="">
+                <div class="for-man__descr">
+                    <div class="for-man__subtitle">Перейти в раздел</div>
+                    <div class="for-man__title">Для мужчин</div>
+                </div>
+            </a>
+            <a href="" class="for-women">
+                <img src="img/for-woman.jpg" alt="">
+                <div class="for-women__descr">
+                    <div class="for-women__subtitle">Перейти в раздел</div>
+                    <div class="for-women__title">Для женщин</div>
+                </div>
+            </a>
+        </div>
+         <div class="find">
+            <form class="find__form form">
+                <div class="form__body">
+                    <h2 class="find__title">Найди<br> бутик около себя</h2>
+                    <h3 class="find__subtitle">Введите свой адрес и узнайте о самых ближайших бутиках к вам</h3>
+                    <div class="find__search">
+                        <input type="search" placeholder="Введите адрес">
+                        <button class="find__btn" type="submit"></button>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </form>
+            <div class="find__map">
+                <img src="img/map.jpg" alt="map">
+                <div class="find__locations">
+                    <div class="loc loc1">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1_290" fill="white">
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z"/>
+                            </mask>
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_1_290)"/>
+                        </svg>
+                        <div class="loc__name loc1__name"><span>ул. Пушкина, 11</span></div>
+                    </div>
+                    <div class="loc loc2">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1_290" fill="white">
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z"/>
+                            </mask>
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_1_290)"/>
+                        </svg>
+                        <div class="loc__name loc2__name"><span>ул. Тверская, 24</span></div>
+                    </div>
+                    <div class="loc loc3">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1_290" fill="white">
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z"/>
+                            </mask>
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_1_290)"/>
+                        </svg>
+                        <div class="loc__name loc3__name"><span>ул. Минская, 51</span></div>
+                    </div>
+                    <div class="loc loc4">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1_290" fill="white">
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z"/>
+                            </mask>
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_1_290)"/>
+                        </svg>
+                        <div class="loc__name loc4__name"><span>ул. Волгоградская, 8</span></div>
+                    </div>
+                    <div class="loc loc5">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_1_290" fill="white">
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z"/>
+                            </mask>
+                            <path d="M29.9991 0C17.8201 0 7.91071 9.90943 7.91071 22.0896C7.91071 25.2666 8.56098 28.3 9.84248 31.1062C15.3652 43.1912 25.9538 55.9504 29.0682 59.5726C29.3015 59.8434 29.6417 59.9994 29.9997 59.9994C30.3577 59.9994 30.6978 59.8434 30.9312 59.5726C34.0444 55.951 44.6329 43.1924 50.1575 31.1062C51.4396 28.3 52.0893 25.2666 52.0893 22.0896C52.088 9.90943 42.1786 0 29.9991 0ZM29.9991 33.563C23.6726 33.563 18.5251 28.4155 18.5251 22.089C18.5251 15.7619 23.6726 10.6144 29.9991 10.6144C36.3256 10.6144 41.4731 15.7619 41.4731 22.089C41.4737 28.4155 36.3262 33.563 29.9991 33.563Z" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_1_290)"/>
+                        </svg>
+                        <div class="loc__name loc5__name"><span>ул. Пятницкая, 3</spa></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="products__inner">
+                <a href="#" class="products__item item-product">
+                    <div class="item-product__inner">
+                        <img src="img/products/prod1.png" alt="product">
+                        <div class="products__descr">
+                            <div class="products__name">КОЛЬЦО jow’s, Cartier</div>
+                            <div class="products__material">Белое золото, бриллианты</div>
+                            <div class="products__price">674 000 ₽</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__item products__item--big">
+                    <div class="products__descr">
+                        <div class="products__name">КОлье etoile, HUBLOT</div>
+                        <div class="products__material">Белое золото, бриллианты</div>
+                        <div class="products__price">539 000 ₽</div>
+                    </div>
+                </a>
+                <a href="#" class="products__item item-product">
+                    <div class="item-product__inner">
+                        <img src="img/products/prod3.png" alt="product">
+                        <div class="products__descr">
+                            <div class="products__name">КОЛЬЦО croix, Cartier</div>
+                            <div class="products__material">Желтое, белое, розовое золото</div>
+                            <div class="products__price">432 000 ₽</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__item item-product">
+                    <div class="item-product__inner">
+                        <img src="img/products/prod4.png" alt="product">
+                        <div class="products__descr">
+                            <div class="products__name">Серьги moon, HUBLOT</div>
+                            <div class="products__material">Желтое золото, сапфир</div>
+                            <div class="products__price">498 000 ₽</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="products__item item-product">
+                    <div class="item-product__inner">
+                        <img src="img/products/prod5.png" alt="product">
+                        <div class="products__descr">
+                            <div class="products__name">серьги win, BLANCPAIN</div>
+                            <div class="products__material">Желтое золото, жемчуг</div>
+                            <div class="products__price">398 000 ₽</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="container">
+                <h2 class="socials__title">Мы<br>в социальных сетях</h2>
+            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/slider/sl-1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/sl-2.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/sl-3.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/sl-4.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/sl-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="socials__links">
+                    <a href="#"><img src="img/icons/Facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="img/icons/Instagram.png" alt="inst"></a>
+                </div>
+            </div>
+        </div>
+         <div class="subscribe">
+            <div class="subscribe__inner">
+                <div class="subscribe__left">
+                    <img src="img/subscibe.jpg" alt="">
+                </div>
+                <div class="subscribe__right">
+                    <div class="subcribe__body">
+                        <div class="subscribe-tel">
+                            <h2 class="subscribe-tel__title">телефон флагманского магазина</h2>
+                            <a href="" class="subscribe-tel__link">+7 800 456 456</a>
+                        </div>
+                        <div class="subscribe-news">
+                            <h2 class="subscribe-news__title">подпишитесь на новости</h2>
+                            <div class="subscribe-news__email">
+                                <input type="email" placeholder="Введите E-mail">
+                                <button type="submit"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <ul class="footer-top__list">
+                    <li class="footer-top__item">
+                        <a class="footer-top__link" href="">работа в компании</a>
+                    </li>
+                    <li class="footer-top__item">
+                        <a class="footer-top__link" href="">условия пользования</a>
+                    </li>
+                    <li class="footer-top__item">
+                        <a class="footer-top__link" href="">выходные данные</a>
+                    </li>
+                    <li class="footer-top__item">
+                        <a class="footer-top__link" href="">политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a class="footer-top__link" href="">карта сайта</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__logo">
+                        <a href="" class="logo"><img src="img/logo-white.svg" alt="logo"></a>
+                </div>
+                <div class="footer-bottom__connect">
+                    <div class="footer-botton__tel footer-tel">
+                        <div class="footer-tel__title">
+                            <h3>телефон горячей линии</h3>
+                         </div>
+                        <a href="tel:+7 800 456 456" class="footer-tel__number">+7 800 456 456</a>
+                        <div class="footer-bottom__links">
+                            <a href="#"><img src="img/icons/Facebook.png" alt="facebook"></a>
+                            <a href="#"><img src="img/icons/Instagram.png" alt="inst"></a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__news footer-news">
+                        <div class="footer-news__title">
+                            <h3>подпишитесь на новости</h3>
+                        </div>
+                        <form class="footer-news__email" action="">
+                            <input type="email" placeholder="Введите E-mail">
+                            <button class="footer-news__btn" type="submit"></button>
+                        </form>
+                        <div class="footer-news__line"></div>
+                        <div class="footer-bottom__downloads">
+                            <a href="#"><img src="img/apstore.png" alt="facebook"></a>
+                            <a href="#"><img src="img/gplay.png" alt="inst"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
