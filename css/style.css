@@ -17,7 +17,7 @@ body.no-scroll{
 }
 .header.popup-active{
     background-color: #272727;
-    transition: 2s;
+    transition: .3s;
 }
 .header__inner{
     display: flex;
