@@ -54,9 +54,6 @@
     .jewerly-content__link:before{
         display: none;
     }
-    .ring{
-        left: 50%;
-    }
     .find{
         flex-direction: column;
     }
