@@ -3,7 +3,8 @@ $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    variableWidth: true
+    variableWidth: true,
+    centerMode: true
   });
 
   const menubtn = document.querySelector('.menu__button');
