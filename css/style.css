@@ -668,8 +668,9 @@ body.no-scroll{
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.slick-track{
+.slick-slide{
     height: 385px;
+    transition: .3s;
 }
 .slider__item{
     margin-right: 25px;
