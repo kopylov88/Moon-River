@@ -1,0 +1,935 @@
+.container{
+    max-width: 1145px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body.no-scroll{
+    overflow: hidden;
+}
+/*header*/
+.header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header.popup-active{
+    background-color: #272727;
+    transition: .3s;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+.menu__list{
+    display: flex;
+}
+.menu__item:not(:last-child) {
+    margin-right: 40px;
+}
+.basket{
+    display: flex;
+}
+.basket__number{
+    color: #fff;
+    margin-left: 10px;
+}
+.burger{
+    margin-left: 40px;
+}
+.menu__button{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.bar{
+    background-color: #fff;
+    width: 35px;
+    height: 3px;
+    transition: 0.5s;
+}
+.menu__button.clicked .bar.bar:nth-child(2){
+    opacity: 0;
+}
+.menu__button.clicked .bar.bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.menu__button.clicked .bar.bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.logo.disabled{
+    display: none;
+}
+.logo-white{
+    display: none;
+}
+.logo-white.active{
+    display: block;
+}
+/* jewerly*/
+.jewerly{
+    margin-bottom: 20px;
+}
+.jewerly-bg{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.jewerly-bg-left{
+    flex: 0 1 60%;
+}
+.jewerly-bg-right{
+    background-color: #272727;
+    flex: 0 1 40%;
+}
+.jewerly-content{
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+.jewerly-content__inner{
+    display: flex;
+}
+.jewerly-content__left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    flex: 0 1 60.2%;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+.jewerly-content__title{
+    margin-top: 42vh;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+    color: #272727;
+}
+.jewerly-content__link{
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 133%;
+    color: #272727;
+    transition: .3s;
+}
+.jewerly-content__link::before{
+    content: "";
+    display: inline-block;
+    margin-right: 38px;
+    margin-left: 130px;
+    width: 130px;
+    height: 0px;
+    border: 1px solid #272727
+}
+.jewerly-content__lang{
+    display: flex;
+    column-gap: 10px;
+}
+.jewerly-content__lang-item{
+    font-family: 'Futura PT Book';
+    font-size: 16px;
+    line-height: 131%;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}
+.jewerly-content__lang-item.active{
+    color: #272727; 
+}
+.jewerly-content__right{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 1 39.8%;
+    height: 100vh;
+    padding-bottom: 60px;
+}
+.ring{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(-31%, -50%);
+    max-width: 322px;
+}
+.ring img{
+    width: 100%;
+}
+.ring-descr{
+    align-self: flex-end;
+    margin-top: auto;
+}
+.ring-descr__name{
+    color: #fff;
+    font-family: 'Futura PT Book';
+    font-size: 16px;
+    line-height: 131%;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+.ring-descr__material{
+    color: #C2C2C2;
+    font-family: "Forum";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 116%;
+    margin-bottom: 9px;
+}
+.ring-descr__price{
+    color: #EFC58B;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: right;
+}
+.popup{
+    position: absolute;
+    top: 0;
+    left: -500%;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    padding: 133px 0 70px 0;
+    background-color:  #272727;
+    transition: .5s;
+}
+.popup.active{
+    left: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.popup-top{
+    margin-bottom: 140px;
+}
+.popup-bottom__inner{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8%;
+    min-height: 268px;
+    position: relative;
+}
+.popup-bottom__inner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: -70px;
+    background-color: #2F2F2F;
+}
+.popup-bottom__img{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/popup-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    padding: 30px;
+}
+.popup-bottom__connect{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popup-bottom__title{
+    font-family: 'Futura PT Book';
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.popup-bottom__text{
+    align-self: center;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.see{
+    align-self: end;
+}
+.see__item{
+    font-family: 'Futura PT Book';
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0.06em;
+}
+.see__link{
+    display: inline-flex;
+    column-gap: 25px;
+    color: #fff;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0.06em;
+}
+.see__item img{
+    width: 100%;
+    height: 100%;
+}
+.menu-popup-wpap{
+    background-color: #2F2F2F;
+}
+.popup__catalog{
+   position: relative;
+}
+.menu-popup{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-bottom: 70px;
+}
+.menu-popup__btn{
+    position: relative;
+    font-family: 'Futura PT Medium';
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    min-height: 75px;
+}
+.menu-popup__btn::after{
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.menu-popup__btn.active::after{
+    display: block;
+}
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+.tab.active{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    transition: opacity 1s; 
+}
+.tab__title{
+    margin-bottom: 30px;
+    font-family: 'Forum';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.tab__list li{
+    margin-bottom: 15px;
+}
+.tab__link{
+    font-family: 'Futura PT Book';
+    color: #fff;
+    padding-bottom: 5px;
+    transition: .3s;
+}
+.tab__link:hover{
+    text-decoration: underline;
+}
+.show-all{
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    color: #EFC58B;
+    padding-bottom: 5px;
+}
+.show-all:hover{
+    text-decoration: underline;
+}
+/*for*/
+.for{
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.for-man{
+    flex-basis: 50%;
+    position: relative;
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+.for-man:hover{
+    filter: brightness(1);
+}
+.for-man img{
+    width: 100%;
+}
+.for-man__descr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.for-man__subtitle {
+    font-family: 'Futura PT Light';
+    font-size: 24px;
+    line-height: 129%;
+    color: #fff;
+}
+.for-man__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+.for-women{
+    flex-basis: 50%;
+    position: relative;
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+.for-women:hover{
+    filter: brightness(1);
+}
+.for-women img{
+    width: 100%;
+}
+.for-women__descr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.for-women__subtitle {
+    font-family: 'Futura PT Light';
+    font-size: 24px;
+    line-height: 129%;
+    color: #fff;
+}
+.for-women__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+/*find*/
+.find{
+    display: flex;
+    margin-bottom: 20px;
+}
+.find__form{
+    flex: 0 1 50%;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.form__body{
+    max-width: 54%;
+}
+.find__descr{
+    max-width: 54.3%;
+}
+.find__title{
+    margin-bottom: 16px;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+.find__subtitle{
+    margin-bottom: 60px;
+    font-family: 'Futura PT Light';
+    font-size: 18px;
+    line-height: 127%;
+    color: #fff;
+}
+.find__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.find__search input{
+    padding: 10px 0;
+    background-color: transparent;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+.find__search input::placeholder{
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Futura PT Light';
+    font-size: 18px;
+    line-height: 127%;
+}
+.find__btn{
+    background-image: url(../img/icons/Line.svg);
+    background-color: transparent;
+    width: 32px;
+    height: 15px;
+}
+.line{
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.find__map{
+    position: relative;
+    flex: 0 1 50%;
+}
+.find__map img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.find__locations{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.loc__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    white-space: nowrap;
+    background-color: rgba(103, 103, 103, 0.58);
+    font-family: 'Futura PT Light';
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    left: 60px;
+    transition: 0.3s;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.loc{
+    position: absolute;
+    cursor: pointer;
+}
+.loc svg{
+    fill: transparent;
+    transition: .5s;
+}
+.loc:hover svg{
+    fill: white;
+}
+.loc:hover .loc__name{
+    opacity: 1;
+}
+.loc_1{
+    top: 24.6%;
+    left: 11.7%;
+}
+.loc_2{
+    top: 28.4%;
+    left: 35.1%;
+}
+.loc_3{
+    top: 38.4%;
+    left: 50.6%;
+}
+.loc_4{
+    top: 59.7%;
+    left: 64.8%;
+}
+.loc_5{
+    top: 68.2%;
+    left: 36.2%;
+}
+/*products*/
+.products{
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.products__inner{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.products__item{
+    padding: 20px 30px;
+    background-color:  #EDEDED;
+    transition: .3s;
+}
+.products__item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 5px #757575;
+}
+.item-product__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.item__product-img{
+    max-width: 260px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.item__product-img:hover{
+    transform: scale(1.1);
+}
+.products__item--big{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 30px;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    min-height: 820px;
+    background-image: url(../img/products/prod2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.products__descr{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.products__name{
+    font-family: 'Futura PT Book';
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #272727;
+}
+.products__material{
+    font-family: 'Futura PT Light';
+    font-size: 18px;
+    line-height: 127%;
+    color: #757575;
+}
+.products__price{
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: #E2B67A;
+}
+.products__item--big .products__name, .products__item--big .products__material{
+    color: #fff;
+}
+/*socials*/
+.socials{
+    padding: 100px 0;
+    background: #272727;
+}
+.socials__title{
+    margin-bottom: 80px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.slick-slide{
+    height: 385px;
+    transition: .3s;
+}
+.slider__item{
+    margin-right: 25px;
+    transition: .3s;
+}
+.slider__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slick-prev{
+    position: absolute;
+    right: 30.9%;
+    bottom: -109px;
+    font-size: 0;
+    width: 51px;
+    height: 29px;
+    background-color: transparent;
+    background-image: url(../img/icons/prev.svg);
+    background-size: contain;
+}
+.slick-next{
+    position: absolute;
+    right: 11.2%;
+    bottom: -109px;
+    font-size: 0;
+    width: 51px;
+    height: 29px;
+    background-color: transparent;
+    background-image: url(../img/icons/next.svg);
+    background-size: contain;
+}
+.slick-dots{
+    display: flex;
+    column-gap: 17px;
+    position: absolute;
+    right: 18.2%;
+    bottom: -102px;
+}
+.slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    background-image: url(../img/icons/dot.png);
+    background-repeat: no-repeat;
+}
+.slick-dots li.slick-active button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    background-image: url(../img/icons/dot-active.png);
+    background-repeat: no-repeat;
+}
+.socials__links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90px;
+    margin-top: 80px;
+}
+/* subscribe*/
+.subscribe__inner{
+    display: flex;
+}
+.subscribe__left{
+    flex-basis: 50%;
+}
+.subscribe__left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.subscribe__right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.subcribe__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    padding: 20px;
+}
+.subscribe-tel__title{
+    margin-bottom: 30px;
+    font-family: 'Futura PT Book';
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.subscribe-tel__link{
+    display: block;
+    font-family: 'Futura PT Light';
+    font-size: 22px;
+    line-height: 127%;
+    color: #959595;
+}
+.subscribe-news__title{
+    margin-bottom: 30px;
+    font-family: 'Futura PT Book';
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.subscribe-news__email{
+    position: relative;
+    display: flex;
+    max-width: 280px;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-news__email:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+}
+.subscribe-news__email input{
+    font-size: 22px;
+    width: 100%;
+    padding-right: 10px;
+}
+.subscribe-news__email input::placeholder{
+    font-family: 'Futura PT Light';
+    font-size: 22px;
+    line-height: 127%;
+    color: #959595;
+}
+.subscribe-news__email button{
+    width: 33px;
+    height: 17px;
+    background-color: transparent;
+    background-image: url(../img/icons/Line-black.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*footer*/
+.footer{
+    padding: 80px 0 90px 0;
+    background-color: #272727;
+}
+.footer-top{
+    margin-bottom: 90px;
+}
+.footer-top__list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-top__link{
+    font-family: 'Futura PT Medium';
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.footer-top__link:hover{
+    border-bottom: 1px solid #fff;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom__connect{
+    display: flex;
+    column-gap: 80px;
+}
+.footer-bottom__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90px;
+}
+.footer-tel__title{
+    margin-bottom: 15px;
+    font-family: 'Futura PT Book';
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-tel__number{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'Futura PT Light';
+    font-size: 18px;
+    line-height: 127%;
+    color: #C2C2C2;
+}
+.footer-news__title{
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'Futura PT Book';
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.footer-news__email{
+    position: relative;
+    display: flex;
+    max-width: 280px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-news__email:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.footer-news__email input{
+    width: 80%;
+    color: #fff;
+    background-color: transparent;
+    font-size: 22px;
+}
+.footer-news__email input::placeholder{
+    font-family: 'Futura PT Book';
+    font-size: 22px;
+    line-height: 127%;
+    color: #959595;
+}
+.footer-news__btn{
+    width: 33px;
+    height: 17px;
+    flex-shrink: 0;
+    background-color: transparent;
+    background-image: url(../img/icons/Line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer-bottom__downloads{
+    display: flex;
+    margin-top: 25px;
+}
+ 
+
